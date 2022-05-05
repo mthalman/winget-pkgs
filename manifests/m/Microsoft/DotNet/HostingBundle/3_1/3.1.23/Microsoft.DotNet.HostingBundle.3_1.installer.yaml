@@ -1,0 +1,19 @@
+# Created using wingetcreate 1.0.4.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.HostingBundle.3_1
+PackageVersion: 3.1.23
+MinimumOSVersion: 6.1.7601
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+Installers:
+- Architecture: x86
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/3.1.23/dotnet-hosting-3.1.23-win.exe
+  InstallerSha256: 107C76A2324D72AD2DA1CE1CEA60DD03C2A734F58DA7B51B975D6D563316B834
+  AppsAndFeaturesEntries:
+  - DisplayVersion: 3.1.23.22123
+ManifestType: installer
+ManifestVersion: 1.1.0
+
