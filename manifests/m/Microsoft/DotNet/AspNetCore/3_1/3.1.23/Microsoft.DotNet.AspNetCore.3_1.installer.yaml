@@ -1,0 +1,21 @@
+# Created using wingetcreate 1.0.3.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.AspNetCore.3_1
+PackageVersion: 3.1.23
+MinimumOSVersion: 6.1.7601
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+Installers:
+- Architecture: x64
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/3.1.23/aspnetcore-runtime-3.1.23-win-x64.exe
+  InstallerSha256: 62EE3ED37F5C4B33C22A83A47FD8A0312587ED9D925DB9C162CF6B7FF3862AA3
+- Architecture: x86
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/3.1.23/aspnetcore-runtime-3.1.23-win-x86.exe
+  InstallerSha256: 319177D4FBD3483439C89FC532250550FCA280A2C0514A9D34FE0B63B4379A2B
+ManifestType: installer
+ManifestVersion: 1.1.0
+
