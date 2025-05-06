@@ -1,0 +1,21 @@
+# Created using wingetcreate 1.0.3.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.DesktopRuntime.3_1
+PackageVersion: 3.1.23
+MinimumOSVersion: 6.1.7601
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+Installers:
+- Architecture: x64
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/Runtime/3.1.23/windowsdesktop-runtime-3.1.23-win-x64.exe
+  InstallerSha256: 428A346951E19AB89942D1E84E85D41DA3D164FD257C5D6375F65B0C39121944
+- Architecture: x86
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/Runtime/3.1.23/windowsdesktop-runtime-3.1.23-win-x86.exe
+  InstallerSha256: 8B94D3EB61B4896EAC2F9F758ED22E2E0F8A101FECF7B178F3CFD75D35F74A71
+ManifestType: installer
+ManifestVersion: 1.1.0
+
